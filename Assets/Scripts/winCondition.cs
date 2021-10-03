@@ -16,7 +16,7 @@ public class winCondition : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("EndAriel", LoadSceneMode.Single);
+            SceneManager.LoadScene("EndScreen", LoadSceneMode.Single);
         }
         else
         {
