@@ -26,6 +26,10 @@ public class ThirdPersonCharacterControl : MonoBehaviour
         //{
         //    PlayerMovement();
         //}
+        
+    }
+    private void FixedUpdate()
+    {
         PlayerMovement();
     }
 
