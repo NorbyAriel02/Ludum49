@@ -19,11 +19,8 @@ public class restartTrigget : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Application.LoadLevel(scene.name);
-        }
-        else
-        {
-
+            SceneManager.LoadScene(scene.name);
+            //Application.LoadLevel
         }
     }
 }

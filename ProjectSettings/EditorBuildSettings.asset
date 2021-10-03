@@ -6,19 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/HomeScreen.unity
-    guid: f858bb1d4a8cdec439a2a524842e65ea
-  - enabled: 1
-    path: Assets/Scenes/EscenaGabo.unity
-    guid: 26ce300b7208f144798c596ef9c9270e
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Ariel.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/EndScreen.unity
     guid: 97817de471ab4bb428c63b8a36f9fee6
-  - enabled: 1
-    path: Assets/Scenes/EscenaGabo 1.unity
-    guid: df810b8a88368bc4a95b5c8d531ac3ea
-  m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
+  m_configObjects: {}

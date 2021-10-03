@@ -6,6 +6,7 @@ public class PlayerControl : MonoBehaviour
 {
 
     public float speed=10f;
+    public float Salto = 10f;
     Rigidbody rigidbody;
     CheckpointSystem checkpointSystem;
     public Vector3 playerInitialPosition;
@@ -20,12 +21,12 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
-        rigidbody.velocity = Vector3.up * rigidbody.velocity.y + Vector3.right * speed * Input.GetAxis("Horizontal");
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            rigidbody.velocity = rigidbody.velocity + Vector3.up;
-        }
+        //rigidbody.velocity = Vector3.up * rigidbody.velocity.y + Vector3.right * speed * Input.GetAxis("Horizontal");
+        
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    rigidbody.velocity = rigidbody.velocity + Vector3.up * Salto;
+        //}
     }
 
     public void SetPosition(Vector3 p)

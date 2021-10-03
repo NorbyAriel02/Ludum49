@@ -12,13 +12,20 @@ public class CheckpointSystem : MonoBehaviour
 
     void Start()
     {
+        //DeleteData();
         currentCheckpointIndex = -1;
         GetCheckpointsReferences();
-        LoadData();
-        
+        LoadData();       
 
     }
-
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F5))
+        {
+            DeleteData();
+            LoadData();
+        }
+    }
     void GetCheckpointsReferences()
     {
         int checkpointCount = transform.childCount;
