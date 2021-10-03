@@ -10,7 +10,7 @@ public class ThirdPersonCharacterControl : MonoBehaviour
     Rigidbody rigidbody;
     public Transform start;
     public Transform end;
-    public float delay;
+    public float NumeroDeSaltos;
     public bool siSalta;
     private void Start()
     {
@@ -33,18 +33,17 @@ public class ThirdPersonCharacterControl : MonoBehaviour
     {
         //Rigid.MoveRotation(Rigid.rotation * Quaternion.Euler(new Vector3(0, Input.GetAxis("Mouse X") * MouseSensitivity, 0)));
         Vector3 v = (transform.position + (transform.forward * Input.GetAxis("Vertical") * speed * Time.deltaTime) + (transform.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime));
-        delay -= Time.deltaTime;
+        
+        if(Physics.Linecast(start.position, end.position))
+        {
+            NumeroDeSaltos = 0;
+        }
         //rigidbody.velocity = v;
         rigidbody.MovePosition(v);
-        if (Input.GetKeyDown(KeyCode.Space) && (Physics.Linecast(start.position, end.position) || siSalta))
+        if (Input.GetKeyDown(KeyCode.Space) && NumeroDeSaltos < 1)
         {
             rigidbody.AddForce(transform.up * Salto);
-            siSalta = false;
-            delay = timer;
-        }
-        else if(delay < 0)
-        {
-            siSalta = true;
+            NumeroDeSaltos++;
         }
     }
 }

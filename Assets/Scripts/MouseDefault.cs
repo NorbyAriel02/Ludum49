@@ -8,6 +8,8 @@ public class MouseDefault : MonoBehaviour
     void Start()
     {
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+        Debug.Log("mouse visble");
     }
 
     // Update is called once per frame
