@@ -6,9 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Ariel.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/HomeScreen.unity
+    guid: f858bb1d4a8cdec439a2a524842e65ea
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 35e9998d441026a4d904b914c6917866
   - enabled: 1
     path: Assets/Scenes/EndScreen.unity
     guid: 97817de471ab4bb428c63b8a36f9fee6
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/CreditsScreen.unity
+    guid: e8a6345d5bda83b47ba9ba9b4e77544d
+  - enabled: 1
+    path: Assets/Scenes/EndAriel.unity
+    guid: 1add5e75b43e2b84cb96640c1c461863
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 24c0bb5c10bc55349b40cb7cfbd99017, type: 2}

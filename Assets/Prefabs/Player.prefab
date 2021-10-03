@@ -257,8 +257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d02aff6213e3aac46a72681e2dfca83b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
-  Salto: 10
+  speed: 10
+  Salto: 5
   playerInitialPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &2136605220870435318
 MonoBehaviour:
@@ -272,5 +272,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a00549874165b54f840c2d4fdba57be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 15
   Salto: 3000
