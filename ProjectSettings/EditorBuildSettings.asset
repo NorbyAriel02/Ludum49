@@ -17,8 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreditsScreen.unity
     guid: e8a6345d5bda83b47ba9ba9b4e77544d
-  - enabled: 1
-    path: Assets/Scenes/EndAriel.unity
-    guid: 1add5e75b43e2b84cb96640c1c461863
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 24c0bb5c10bc55349b40cb7cfbd99017, type: 2}
